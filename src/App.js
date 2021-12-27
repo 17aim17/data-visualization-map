@@ -30,7 +30,7 @@ function App({ users, areas, areas_by_id, user_area_analytics, total, calculateU
   return (
     <Grid container>
       <Grid item xs={12} lg={8}>
-        <MapContainer center={[12.9716, 77.5946]} zoom={13} scrollWheelZoom={true} style={{ height: '100vh' }}>
+        <MapContainer center={[12.9716, 77.5946]} zoom={13} scrollWheelZoom={true} style={{ height: '95vh' }}>
           <TileLayer
             attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             url='https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png'
