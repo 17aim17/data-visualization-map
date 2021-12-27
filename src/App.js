@@ -102,17 +102,6 @@ function App({ users, areas, areas_by_id, user_area_analytics, total, calculateU
           }
         </Container>
       </Grid>
-
-      {/* <div>
-        {
-          data &&
-          <div>
-            <Chart data={data} selectedArea={selectedArea} />
-              </div>
-
-        }
-      </div > */}
-
     </Grid >
   );
 }
