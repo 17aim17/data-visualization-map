@@ -1,6 +1,7 @@
 import { useMap, Marker, Tooltip, Polygon } from 'react-leaflet'
 import { useEffect, useRef, useState } from 'react'
 import { Typography, Divider } from '@material-ui/core'
+
 import Icon from './Icon';
 
 export default ({ selectedArea, isSelected, color, coordinates, areaName, totalusers, proUsers, ratio }) => {
@@ -16,8 +17,10 @@ export default ({ selectedArea, isSelected, color, coordinates, areaName, totalu
         setCenter([center.lat, center.lng]);
         if (isSelected) {
             map.setView(center, 14)
+        } else {
+            map.setView([12.9716, 77.5946], 13)
         }
-    }, [selectedArea])
+    }, [selectedArea, isSelected])
 
     if (!selectedArea) return null
 
